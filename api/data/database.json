@@ -1,0 +1,76 @@
+{
+    "transacoes": {
+        "validation": {
+            "codigo": {
+                "type": "string",
+                "regex": "^[a-f\\d]{32}$",
+                "isIdentityField": true,
+                "nullable": false,
+                "allowDuplicates": false
+            },
+            "nome": {
+                "type": "string",
+                "regex": "^([^\\s]{3,})(\\s[^\\s]+)*$",
+                "regexDescription": "O primeiro nome deve conter pelo menos 3 caracteres e os demais nomes, caso informados, devem ser separados por apenas 1 espaço",
+                "nullable": false,
+                "allowDuplicates": false
+            },
+            "tipo": {
+                "type": "string",
+                "enum": [
+                    "R",
+                    "D"
+                ],
+                "nullable": false
+            },
+            "valor": {
+                "type": "number",
+                "nullable": false
+            },
+            "dataTransacao": {
+                "type": "string",
+                "regex": "^\\d{4}-\\d{2}-\\d{2}$",
+                "nullable": false
+            },
+            "dataHoraCadastro": {
+                "type": "string",
+                "regex": "^\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}\\.\\d{3}$",
+                "nullable": false
+            },
+            "ativo": {
+                "type": "boolean",
+                "isActivationField": true,
+                "nullable": false
+            }
+        },
+        "data": [
+            {
+                "nome": "Teste A",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-28",
+                "codigo": "fa5822d6657e1d43e6a7cf5f5896c148",
+                "dataHoraCadastro": "2022-09-30 15:59:27.587",
+                "ativo": true
+            },
+            {
+                "nome": "Teste despesa 150",
+                "valor": 230,
+                "tipo": "D",
+                "dataTransacao": "2022-09-29",
+                "codigo": "95f5cbe48002cdfd880f5458f5552f8c",
+                "dataHoraCadastro": "2022-09-30 16:01:42.960",
+                "ativo": true
+            },
+            {
+                "nome": "Caiu 1M na minha conta por engano",
+                "valor": 1000000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-30",
+                "codigo": "dd81b98ac4f928b1044cd65f31112fa0",
+                "dataHoraCadastro": "2022-09-30 16:28:03.775",
+                "ativo": false
+            }
+        ]
+    }
+}
