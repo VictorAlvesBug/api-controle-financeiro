@@ -70,6 +70,42 @@
                 "codigo": "dd81b98ac4f928b1044cd65f31112fa0",
                 "dataHoraCadastro": "2022-09-30 16:28:03.775",
                 "ativo": false
+            },
+            {
+                "nome": "banana",
+                "valor": 321,
+                "tipo": "R",
+                "dataTransacao": "2022-10-19",
+                "codigo": "aeb563aa4d678f56a4af0e5c2d1b1a2d",
+                "dataHoraCadastro": "2022-10-03 20:11:03.644",
+                "ativo": true
+            },
+            {
+                "nome": "teste front",
+                "valor": 123,
+                "tipo": "D",
+                "dataTransacao": "2022-10-04",
+                "codigo": "dc7d06badd60dfc0a85e6d84a525aa9e",
+                "dataHoraCadastro": "2022-10-03 20:12:09.558",
+                "ativo": true
+            },
+            {
+                "nome": "Deu bom",
+                "valor": 5000,
+                "tipo": "R",
+                "dataTransacao": "2022-10-01",
+                "codigo": "31142e9b9318a93da3a757f113ac2795",
+                "dataHoraCadastro": "2022-10-03 20:17:39.312",
+                "ativo": true
+            },
+            {
+                "nome": "aleluia",
+                "valor": 12345,
+                "tipo": "D",
+                "dataTransacao": "2022-10-19",
+                "codigo": "b8296970f27521e2e5a16578c88768f9",
+                "dataHoraCadastro": "2022-10-03 20:19:06.449",
+                "ativo": true
             }
         ]
     }

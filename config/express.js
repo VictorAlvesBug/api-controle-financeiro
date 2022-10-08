@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const config = require('config');
 
@@ -18,6 +19,8 @@ module.exports = () => {
     app.use(bodyParser.json());
     app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
+    app.use(cors())
+    
     const routesDir = './api/routes/';
 
     fs.readdirSync(routesDir).forEach((file) => {
