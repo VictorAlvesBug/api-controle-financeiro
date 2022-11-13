@@ -4,7 +4,14 @@ module.exports = () => {
   const transacaoController = {};
 
   transacaoController.listar = (req, res) => {
-    const retorno = transacaoUtils.listar(req.query);
+    if(!req.body.userId){
+      return res.status(400).json({
+        sucesso: false,
+        mensagem: "Valor de userId inválido"
+      });
+    }
+
+    const retorno = transacaoUtils.listar({...req.query, userId: req.body.userId});
     if (retorno.sucesso) {
       return res.status(201).json(retorno);
     }
@@ -13,6 +20,13 @@ module.exports = () => {
   };
 
   transacaoController.cadastrar = (req, res) => {
+    if(!req.body.userId){
+      return res.status(400).json({
+        sucesso: false,
+        mensagem: "Valor de userId inválido"
+      });
+    }
+
     const retorno = transacaoUtils.cadastrar(req.body);
 
     if (retorno.sucesso) {
@@ -23,7 +37,14 @@ module.exports = () => {
   };
 
   transacaoController.retornar = (req, res) => {
-    const retorno = transacaoUtils.retornar(req.params.codigo);
+    if(!req.body.userId){
+      return res.status(400).json({
+        sucesso: false,
+        mensagem: "Valor de userId inválido"
+      });
+    }
+
+    const retorno = transacaoUtils.retornar(req.params.codigo, req.body.userId);
 
     if (retorno.sucesso) {
       return res.status(200).json(retorno);
@@ -33,7 +54,14 @@ module.exports = () => {
   };
 
   transacaoController.retornarSaldo = (req, res) => {
-    const listaTransacoes = transacaoUtils.listar().dados;
+    if(!req.body.userId){
+      return res.status(400).json({
+        sucesso: false,
+        mensagem: "Valor de userId inválido"
+      });
+    }
+
+    const listaTransacoes = transacaoUtils.listar({userId: req.body.userId}).dados;
 
     const filtrarReceitas = (transacao) => transacao.tipo === 'R';
     const filtrarDespesas = (transacao) => transacao.tipo === 'D';
@@ -71,6 +99,13 @@ module.exports = () => {
   };
 
   transacaoController.editar = (req, res) => {
+    if(!req.body.userId){
+      return res.status(400).json({
+        sucesso: false,
+        mensagem: "Valor de userId inválido"
+      });
+    }
+
     const retorno = transacaoUtils.editar(req.params.codigo, req.body);
 
     if (retorno.sucesso) {
@@ -81,7 +116,14 @@ module.exports = () => {
   };
 
   transacaoController.deletar = (req, res) => {
-    const retorno = transacaoUtils.deletar(req.params.codigo);
+    if(!req.body.userId){
+      return res.status(400).json({
+        sucesso: false,
+        mensagem: "Valor de userId inválido"
+      });
+    }
+
+    const retorno = transacaoUtils.deletar(req.params.codigo, req.body.userId);
 
     if (retorno.sucesso) {
       return res.status(204).json(retorno);

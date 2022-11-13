@@ -8,21 +8,19 @@ module.exports = () => {
     D: 'Despesa'
   };
 
-  transacaoUtils.listar = ({ incluirDesativados, nome } = {}) => {
+  transacaoUtils.listar = ({ incluirDesativados, nome, userId } = {}) => {
     if (!nome) {
       incluirDesativados = Boolean(
         incluirDesativados?.toLowerCase() === 'true'
       );
 
-        const dados = databaseUtils.listar('transacoes', incluirDesativados);
+        const dados = databaseUtils.listar('transacoes', incluirDesativados, userId);
 
       return {
         sucesso: true,
         dados: dados
       };
     }
-
-
 
     const callbackFiltro = (transacao) => {
       return (
@@ -33,6 +31,7 @@ module.exports = () => {
     const dados = databaseUtils.listarPorFiltro({
       nomeRecurso: 'transacoes',
       callback: callbackFiltro,
+      userId
     });
 
     return {
@@ -73,8 +72,8 @@ module.exports = () => {
     };
   };
 
-  transacaoUtils.retornar = (codigo) => {
-    const retorno = databaseUtils.retornar('transacoes', codigo);
+  transacaoUtils.retornar = (codigo, userId) => {
+    const retorno = databaseUtils.retornar('transacoes', codigo, userId);
 
     if (retorno) {
       return {
@@ -90,8 +89,8 @@ module.exports = () => {
   };
 
   transacaoUtils.editar = (codigo, transacao) => {
-    const transacaoDatabase = transacaoUtils.retornar(codigo);
-
+    const transacaoDatabase = transacaoUtils.retornar(codigo, transacao.userId);
+    
     if (!transacaoDatabase.sucesso) {
       return {
         sucesso: false,
@@ -130,8 +129,8 @@ module.exports = () => {
     };
   };
 
-  transacaoUtils.deletar = (codigo) => {
-    const sucesso = databaseUtils.deletar('transacoes', codigo);
+  transacaoUtils.deletar = (codigo, userId) => {
+    const sucesso = databaseUtils.deletar('transacoes', codigo, userId);
 
     return {
       sucesso: sucesso,

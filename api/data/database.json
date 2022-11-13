@@ -8,6 +8,11 @@
                 "nullable": false,
                 "allowDuplicates": false
             },
+            "userId": {
+                "type": "string",
+                "nullable": false,
+                "allowDuplicates": true
+            },
             "nome": {
                 "type": "string",
                 "regex": "^([^\\s]{3,})(\\s[^\\s]+)*$",
@@ -45,7 +50,8 @@
         },
         "data": [
             {
-                "nome": "Teste A",
+                "userId": "UsuarioD",
+                "nome": "Teste edição",
                 "valor": 2000,
                 "tipo": "R",
                 "dataTransacao": "2022-09-28",
@@ -54,6 +60,7 @@
                 "ativo": true
             },
             {
+                "userId": "UsuarioD",
                 "nome": "Teste despesa 150",
                 "valor": 230,
                 "tipo": "D",
@@ -63,6 +70,7 @@
                 "ativo": true
             },
             {
+                "userId": "UsuarioD",
                 "nome": "Caiu 1M na minha conta por engano",
                 "valor": 1000000,
                 "tipo": "R",
@@ -72,6 +80,7 @@
                 "ativo": false
             },
             {
+                "userId": "UsuarioD",
                 "nome": "banana",
                 "valor": 321,
                 "tipo": "R",
@@ -81,15 +90,17 @@
                 "ativo": true
             },
             {
+                "userId": "UsuarioD",
                 "nome": "teste front",
                 "valor": 123,
                 "tipo": "D",
                 "dataTransacao": "2022-10-04",
                 "codigo": "dc7d06badd60dfc0a85e6d84a525aa9e",
                 "dataHoraCadastro": "2022-10-03 20:12:09.558",
-                "ativo": true
+                "ativo": false
             },
             {
+                "userId": "UsuarioD",
                 "nome": "Deu bom",
                 "valor": 5000,
                 "tipo": "R",
@@ -99,6 +110,7 @@
                 "ativo": true
             },
             {
+                "userId": "UsuarioD",
                 "nome": "aleluia",
                 "valor": 12345,
                 "tipo": "D",
@@ -106,6 +118,116 @@
                 "codigo": "b8296970f27521e2e5a16578c88768f9",
                 "dataHoraCadastro": "2022-10-03 20:19:06.449",
                 "ativo": true
+            },
+            {
+                "userId": "UsuarioD",
+                "nome": "Teste com CORS configurado",
+                "valor": 100,
+                "tipo": "R",
+                "dataTransacao": "2022-10-01",
+                "codigo": "e97e0c5dc4fb91d61a83ee0769f2e1f2",
+                "dataHoraCadastro": "2022-10-08 19:50:07.486",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioC",
+                "nome": "Teste do Victor",
+                "valor": 2451.86,
+                "tipo": "D",
+                "dataTransacao": "2022-09-28",
+                "codigo": "8035a0173cfceab1ebe008346445a03f",
+                "dataHoraCadastro": "2022-10-09 19:04:30.863",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioB",
+                "nome": "teste despesa",
+                "valor": 1.23,
+                "tipo": "D",
+                "dataTransacao": "2022-10-06",
+                "codigo": "c4130f951748ba57b1959063a696eafb",
+                "dataHoraCadastro": "2022-10-09 19:04:54.076",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioB",
+                "nome": "teste receita",
+                "valor": 123.56,
+                "tipo": "R",
+                "dataTransacao": "2022-10-05",
+                "codigo": "66bfa0c99aefbb4d44564d6a5dd3bc80",
+                "dataHoraCadastro": "2022-10-09 19:05:16.297",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioB",
+                "nome": "Cadastro",
+                "valor": 0.01,
+                "tipo": "R",
+                "dataTransacao": "2022-10-05",
+                "codigo": "ecd0cdf079bb396fabc216158c00a21a",
+                "dataHoraCadastro": "2022-10-09 19:14:05.975",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioA",
+                "nome": "Teste A",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-28",
+                "codigo": "bf0bdc0685d36a1263e93731c179dd57",
+                "dataHoraCadastro": "2022-11-12 22:22:43.773",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioA",
+                "nome": "Teste 2",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-28",
+                "codigo": "f8fcc25840d6b0b8c76e71f302302932",
+                "dataHoraCadastro": "2022-11-12 22:24:08.364",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioInsomnia",
+                "nome": "Teste Insomnia",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-28",
+                "codigo": "1f9ef31fdde994c2c8a211dd7f598b63",
+                "dataHoraCadastro": "2022-11-12 22:56:18.372",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioInsomnia",
+                "nome": "Teste Insomnia",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-28",
+                "codigo": "cd289706359c297541a29a8f03b99273",
+                "dataHoraCadastro": "2022-11-12 22:56:43.016",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioInsomnia",
+                "nome": "Teste Insomnia",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-28",
+                "codigo": "b1da201cc6b8c48de05cddc95ea61e53",
+                "dataHoraCadastro": "2022-11-12 22:56:45.425",
+                "ativo": true
+            },
+            {
+                "userId": "UsuarioInsomnia",
+                "nome": "Teste despesa 150 editada",
+                "valor": 230,
+                "tipo": "D",
+                "dataTransacao": "2022-09-29",
+                "codigo": "4d8c80404f639a725bb28aa489978621",
+                "dataHoraCadastro": "2022-11-12 22:57:33.455",
+                "ativo": false
             }
         ]
     }

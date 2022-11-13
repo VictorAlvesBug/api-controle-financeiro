@@ -69,7 +69,8 @@ module.exports = () => {
     });
   };
 
-  const retornarPorIdentificador = ({ nomeRecurso, identificador }) => {
+  const retornarPorIdentificador = ({ nomeRecurso, identificador, userId }) => {
+    console.log({ identificador})
     const attrIdentificador = retornarAtributoIdentificador(nomeRecurso);
 
     if (!attrIdentificador) {
@@ -80,14 +81,14 @@ module.exports = () => {
     }
 
     return databaseUtils
-      .listar(nomeRecurso)
+      .listar(nomeRecurso, false, userId)
       .filter((recurso) => recurso[attrIdentificador] === identificador)
       .copy();
   };
 
-  databaseUtils.listarPorFiltro = ({ nomeRecurso, callback }) => {
+  databaseUtils.listarPorFiltro = ({ nomeRecurso, callback, userId }) => {
     return databaseUtils
-      .listar(nomeRecurso)
+      .listar(nomeRecurso, false, userId)
       .filter(callback)
       .copy();
   };
@@ -131,7 +132,7 @@ module.exports = () => {
       .copy();
   };
 
-  const deletarPorIdentificador = ({ nomeRecurso, identificador }) => {
+  const deletarPorIdentificador = ({ nomeRecurso, identificador, userId }) => {
     const attrIdentificador = retornarAtributoIdentificador(nomeRecurso);
     const attrAtivacao = retornarAtributoAtivacao(nomeRecurso);
 
@@ -149,6 +150,7 @@ module.exports = () => {
         .map((item) => {
           if (
             item[attrIdentificador] === identificador &&
+            item['userId'] === userId &&
             item[attrAtivacao] === true
           ) {
             qtdeItensAlterados++;
@@ -159,7 +161,8 @@ module.exports = () => {
     } else {
       database[nomeRecurso].data = databaseUtils
         .listar(nomeRecurso)
-        .filter((item) => item[attrIdentificador] !== identificador);
+        .filter((item) => item[attrIdentificador] !== identificador 
+        || item['userId'] !== userId);
     }
 
     salvar();
@@ -167,7 +170,7 @@ module.exports = () => {
     return qtdeItensAlterados > 0;
   };
 
-  const deletarPorCallback = ({ nomeRecurso, callback }) => {
+  const deletarPorCallback = ({ nomeRecurso, callback, userId }) => {
     const attrAtivacao = retornarAtributoAtivacao(nomeRecurso);
 
     let qtdeItensAlterados = 0;
@@ -176,7 +179,7 @@ module.exports = () => {
       database[nomeRecurso].data = databaseUtils
         .listar(nomeRecurso, (incluirDesativados = true))
         .map((item) => {
-          if (callback(item) && item[attrAtivacao] === true) {
+          if (callback(item) && item[attrAtivacao] === true && item['userId'] === userId) {
             qtdeItensAlterados++;
             item[attrAtivacao] = false;
           }
@@ -185,7 +188,7 @@ module.exports = () => {
     } else {
       database[nomeRecurso].data = databaseUtils
         .listar(nomeRecurso)
-        .filter((item) => !callback(item));
+        .filter((item) => !callback(item) || item['userId'] !== userId);
     }
 
     salvar();
@@ -336,22 +339,24 @@ module.exports = () => {
     return S4() + S4() + S4() + S4() + S4() + S4() + S4() + S4();
   };
 
-  databaseUtils.listar = (nomeRecurso, incluirDesativados = false) => {
+  databaseUtils.listar = (nomeRecurso, incluirDesativados = false, userId) => {
     const attrAtivacao = retornarAtributoAtivacao(nomeRecurso);
     if (incluirDesativados) {
       return database[nomeRecurso].data
+      .filter((recurso) => recurso['userId'] === userId || !userId)
       .copy();
     }
 
     return database[nomeRecurso].data
       .filter((recurso) => !attrAtivacao || recurso[attrAtivacao] === true)
+      .filter((recurso) => recurso['userId'] === userId || !userId)
       .copy();
   };
 
-  databaseUtils.retornar = (nomeRecurso, identificador_ou_callback) => {
+  databaseUtils.retornar = (nomeRecurso, identificador_ou_callback, userId) => {
     return executarPorIdentificadorOuCallback(
       identificador_ou_callback,
-      { nomeRecurso, identificador_ou_callback },
+      { nomeRecurso, identificador_ou_callback, userId },
       retornarPorIdentificador,
       databaseUtils.listarPorFiltro
     );
@@ -372,10 +377,10 @@ module.exports = () => {
     );
   };
 
-  databaseUtils.deletar = (nomeRecurso, identificador_ou_callback) => {
+  databaseUtils.deletar = (nomeRecurso, identificador_ou_callback, userId) => {
     return executarPorIdentificadorOuCallback(
       identificador_ou_callback,
-      { nomeRecurso, identificador_ou_callback },
+      { nomeRecurso, identificador_ou_callback, userId },
       deletarPorIdentificador,
       deletarPorCallback
     );
