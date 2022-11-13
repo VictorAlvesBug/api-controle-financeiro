@@ -228,6 +228,46 @@
                 "codigo": "4d8c80404f639a725bb28aa489978621",
                 "dataHoraCadastro": "2022-11-12 22:57:33.455",
                 "ativo": false
+            },
+            {
+                "nome": "Teste Insomnia dNV",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-09-28",
+                "codigo": "31e8971cf523955a86e05ae6b73312c2",
+                "dataHoraCadastro": "2022-11-12 23:32:04.636",
+                "ativo": true,
+                "userId": "UsuarioInsomnia"
+            },
+            {
+                "userId": "UsuarioInsomnia",
+                "nome": "Teste despesa 150 ins",
+                "valor": 150,
+                "tipo": "D",
+                "dataTransacao": "2022-09-28",
+                "codigo": "e4a5766122f0921d5fb5c3595744b72e",
+                "dataHoraCadastro": "2022-11-12 23:32:30.237",
+                "ativo": true
+            },
+            {
+                "nome": "XXXXXXX",
+                "valor": 230,
+                "tipo": "D",
+                "dataTransacao": "2022-09-29",
+                "codigo": "c36aadb0ee34d6b491cce8a07f2bea26",
+                "dataHoraCadastro": "2022-11-12 23:33:02.291",
+                "ativo": false,
+                "userId": "UsuarioInsomnia"
+            },
+            {
+                "nome": "Testeeee",
+                "valor": 2000,
+                "tipo": "R",
+                "dataTransacao": "2022-11-15",
+                "codigo": "024685bd99e52121ae9c152c1acd265c",
+                "dataHoraCadastro": "2022-11-13 00:59:55.091",
+                "ativo": true,
+                "userId": "UsuarioA"
             }
         ]
     }

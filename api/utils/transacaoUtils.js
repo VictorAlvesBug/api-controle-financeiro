@@ -40,10 +40,11 @@ module.exports = () => {
     };
   };
 
-  transacaoUtils.cadastrar = (transacao) => {
+  transacaoUtils.cadastrar = (transacao, userId) => {
     transacao.codigo = databaseUtils.gerarId();
     transacao.dataHoraCadastro = databaseUtils.retornarDataAtual();
     transacao.ativo = true;
+    transacao.userId = userId;
 
     const validacao = databaseUtils.validarCadastro('transacoes', transacao);
 
@@ -88,9 +89,9 @@ module.exports = () => {
     };
   };
 
-  transacaoUtils.editar = (codigo, transacao) => {
-    const transacaoDatabase = transacaoUtils.retornar(codigo, transacao.userId);
-    
+  transacaoUtils.editar = (codigo, transacao, userId) => {
+    const transacaoDatabase = transacaoUtils.retornar(codigo, userId);
+
     if (!transacaoDatabase.sucesso) {
       return {
         sucesso: false,
