@@ -50,224 +50,144 @@
         },
         "data": [
             {
-                "userId": "UsuarioD",
-                "nome": "Teste edição",
-                "valor": 2000,
+                "nome": "Salário de Novembro",
+                "valor": 8650,
                 "tipo": "R",
-                "dataTransacao": "2022-09-28",
-                "codigo": "fa5822d6657e1d43e6a7cf5f5896c148",
-                "dataHoraCadastro": "2022-09-30 15:59:27.587",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioD",
-                "nome": "Teste despesa 150",
-                "valor": 230,
-                "tipo": "D",
-                "dataTransacao": "2022-09-29",
-                "codigo": "95f5cbe48002cdfd880f5458f5552f8c",
-                "dataHoraCadastro": "2022-09-30 16:01:42.960",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioD",
-                "nome": "Caiu 1M na minha conta por engano",
-                "valor": 1000000,
-                "tipo": "R",
-                "dataTransacao": "2022-09-30",
-                "codigo": "dd81b98ac4f928b1044cd65f31112fa0",
-                "dataHoraCadastro": "2022-09-30 16:28:03.775",
-                "ativo": false
-            },
-            {
-                "userId": "UsuarioD",
-                "nome": "banana",
-                "valor": 321,
-                "tipo": "R",
-                "dataTransacao": "2022-10-19",
-                "codigo": "aeb563aa4d678f56a4af0e5c2d1b1a2d",
-                "dataHoraCadastro": "2022-10-03 20:11:03.644",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioD",
-                "nome": "teste front",
-                "valor": 123,
-                "tipo": "D",
-                "dataTransacao": "2022-10-04",
-                "codigo": "dc7d06badd60dfc0a85e6d84a525aa9e",
-                "dataHoraCadastro": "2022-10-03 20:12:09.558",
-                "ativo": false
-            },
-            {
-                "userId": "UsuarioD",
-                "nome": "Deu bom",
-                "valor": 5000,
-                "tipo": "R",
-                "dataTransacao": "2022-10-01",
-                "codigo": "31142e9b9318a93da3a757f113ac2795",
-                "dataHoraCadastro": "2022-10-03 20:17:39.312",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioD",
-                "nome": "aleluia",
-                "valor": 12345,
-                "tipo": "D",
-                "dataTransacao": "2022-10-19",
-                "codigo": "b8296970f27521e2e5a16578c88768f9",
-                "dataHoraCadastro": "2022-10-03 20:19:06.449",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioD",
-                "nome": "Teste com CORS configurado",
-                "valor": 100,
-                "tipo": "R",
-                "dataTransacao": "2022-10-01",
-                "codigo": "e97e0c5dc4fb91d61a83ee0769f2e1f2",
-                "dataHoraCadastro": "2022-10-08 19:50:07.486",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioC",
-                "nome": "Teste do Victor",
-                "valor": 2451.86,
-                "tipo": "D",
-                "dataTransacao": "2022-09-28",
-                "codigo": "8035a0173cfceab1ebe008346445a03f",
-                "dataHoraCadastro": "2022-10-09 19:04:30.863",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioB",
-                "nome": "teste despesa",
-                "valor": 1.23,
-                "tipo": "D",
-                "dataTransacao": "2022-10-06",
-                "codigo": "c4130f951748ba57b1959063a696eafb",
-                "dataHoraCadastro": "2022-10-09 19:04:54.076",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioB",
-                "nome": "teste receita",
-                "valor": 123.56,
-                "tipo": "R",
-                "dataTransacao": "2022-10-05",
-                "codigo": "66bfa0c99aefbb4d44564d6a5dd3bc80",
-                "dataHoraCadastro": "2022-10-09 19:05:16.297",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioB",
-                "nome": "Cadastro",
-                "valor": 0.01,
-                "tipo": "R",
-                "dataTransacao": "2022-10-05",
-                "codigo": "ecd0cdf079bb396fabc216158c00a21a",
-                "dataHoraCadastro": "2022-10-09 19:14:05.975",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioA",
-                "nome": "Teste A",
-                "valor": 2000,
-                "tipo": "R",
-                "dataTransacao": "2022-09-28",
-                "codigo": "bf0bdc0685d36a1263e93731c179dd57",
-                "dataHoraCadastro": "2022-11-12 22:22:43.773",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioA",
-                "nome": "Teste 2",
-                "valor": 2000,
-                "tipo": "R",
-                "dataTransacao": "2022-09-28",
-                "codigo": "f8fcc25840d6b0b8c76e71f302302932",
-                "dataHoraCadastro": "2022-11-12 22:24:08.364",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioInsomnia",
-                "nome": "Teste Insomnia",
-                "valor": 2000,
-                "tipo": "R",
-                "dataTransacao": "2022-09-28",
-                "codigo": "1f9ef31fdde994c2c8a211dd7f598b63",
-                "dataHoraCadastro": "2022-11-12 22:56:18.372",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioInsomnia",
-                "nome": "Teste Insomnia",
-                "valor": 2000,
-                "tipo": "R",
-                "dataTransacao": "2022-09-28",
-                "codigo": "cd289706359c297541a29a8f03b99273",
-                "dataHoraCadastro": "2022-11-12 22:56:43.016",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioInsomnia",
-                "nome": "Teste Insomnia",
-                "valor": 2000,
-                "tipo": "R",
-                "dataTransacao": "2022-09-28",
-                "codigo": "b1da201cc6b8c48de05cddc95ea61e53",
-                "dataHoraCadastro": "2022-11-12 22:56:45.425",
-                "ativo": true
-            },
-            {
-                "userId": "UsuarioInsomnia",
-                "nome": "Teste despesa 150 editada",
-                "valor": 230,
-                "tipo": "D",
-                "dataTransacao": "2022-09-29",
-                "codigo": "4d8c80404f639a725bb28aa489978621",
-                "dataHoraCadastro": "2022-11-12 22:57:33.455",
-                "ativo": false
-            },
-            {
-                "nome": "Teste Insomnia dNV",
-                "valor": 2000,
-                "tipo": "R",
-                "dataTransacao": "2022-09-28",
-                "codigo": "31e8971cf523955a86e05ae6b73312c2",
-                "dataHoraCadastro": "2022-11-12 23:32:04.636",
+                "dataTransacao": "2022-11-07",
+                "codigo": "f7578bab8ca5f3e9484b3768301e706d",
+                "dataHoraCadastro": "2022-11-19 22:00:05.829",
                 "ativo": true,
-                "userId": "UsuarioInsomnia"
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
             },
             {
-                "userId": "UsuarioInsomnia",
-                "nome": "Teste despesa 150 ins",
-                "valor": 150,
+                "nome": "Doação para ONG Quatro Patas",
+                "valor": 300,
                 "tipo": "D",
-                "dataTransacao": "2022-09-28",
-                "codigo": "e4a5766122f0921d5fb5c3595744b72e",
-                "dataHoraCadastro": "2022-11-12 23:32:30.237",
-                "ativo": true
-            },
-            {
-                "nome": "XXXXXXX",
-                "valor": 230,
-                "tipo": "D",
-                "dataTransacao": "2022-09-29",
-                "codigo": "c36aadb0ee34d6b491cce8a07f2bea26",
-                "dataHoraCadastro": "2022-11-12 23:33:02.291",
-                "ativo": false,
-                "userId": "UsuarioInsomnia"
-            },
-            {
-                "nome": "Testeeee",
-                "valor": 2000,
-                "tipo": "R",
-                "dataTransacao": "2022-11-15",
-                "codigo": "024685bd99e52121ae9c152c1acd265c",
-                "dataHoraCadastro": "2022-11-13 00:59:55.091",
+                "dataTransacao": "2022-11-10",
+                "codigo": "44aaf655656298a13a72662f81c3ee99",
+                "dataHoraCadastro": "2022-11-19 22:02:52.697",
                 "ativo": true,
-                "userId": "UsuarioA"
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Condomínio",
+                "valor": 3253.27,
+                "tipo": "D",
+                "dataTransacao": "2022-11-08",
+                "codigo": "54f3ae40186dcf40e60e831f79461a2f",
+                "dataHoraCadastro": "2022-11-19 22:03:47.515",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Mercado - Compras do Mês",
+                "valor": 498.97,
+                "tipo": "D",
+                "dataTransacao": "2022-11-12",
+                "codigo": "0779f9e73019e1456f9bc0ba8a425d84",
+                "dataHoraCadastro": "2022-11-19 22:04:54.206",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Investimento na Bolsa de Valores",
+                "valor": 2500,
+                "tipo": "D",
+                "dataTransacao": "2022-11-14",
+                "codigo": "b7843308a646e2b5405ff2843af544e9",
+                "dataHoraCadastro": "2022-11-19 22:06:20.443",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Dividendos de Ações da Bolsa",
+                "valor": 1357,
+                "tipo": "R",
+                "dataTransacao": "2022-11-16",
+                "codigo": "d28a13ca78ae12069c17e0b6443bcc4f",
+                "dataHoraCadastro": "2022-11-19 22:07:06.264",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Mensalidade da Escola do Pedrinho",
+                "valor": 1780,
+                "tipo": "D",
+                "dataTransacao": "2022-11-19",
+                "codigo": "2da77faab7422d221bcd945980f77f9d",
+                "dataHoraCadastro": "2022-11-19 22:09:45.824",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Salário de Dezembro",
+                "valor": 8650,
+                "tipo": "R",
+                "dataTransacao": "2022-12-07",
+                "codigo": "f7578bab8ca5f3e9484b3768301e706d",
+                "dataHoraCadastro": "2022-11-19 22:00:05.829",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Doação para ONG Quatro Patas",
+                "valor": 300,
+                "tipo": "D",
+                "dataTransacao": "2022-12-10",
+                "codigo": "44aaf655656298a13a72662f81c3ee99",
+                "dataHoraCadastro": "2022-11-19 22:02:52.697",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Condomínio",
+                "valor": 3253.27,
+                "tipo": "D",
+                "dataTransacao": "2022-12-08",
+                "codigo": "54f3ae40186dcf40e60e831f79461a2f",
+                "dataHoraCadastro": "2022-11-19 22:03:47.515",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Mercado - Compras do Mês",
+                "valor": 498.97,
+                "tipo": "D",
+                "dataTransacao": "2022-12-12",
+                "codigo": "0779f9e73019e1456f9bc0ba8a425d84",
+                "dataHoraCadastro": "2022-11-19 22:04:54.206",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Investimento na Bolsa de Valores",
+                "valor": 2500,
+                "tipo": "D",
+                "dataTransacao": "2022-12-14",
+                "codigo": "b7843308a646e2b5405ff2843af544e9",
+                "dataHoraCadastro": "2022-11-19 22:06:20.443",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Dividendos de Ações da Bolsa",
+                "valor": 1357,
+                "tipo": "R",
+                "dataTransacao": "2022-12-16",
+                "codigo": "d28a13ca78ae12069c17e0b6443bcc4f",
+                "dataHoraCadastro": "2022-11-19 22:07:06.264",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Mensalidade da Escola do Pedrinho",
+                "valor": 1780,
+                "tipo": "D",
+                "dataTransacao": "2022-12-19",
+                "codigo": "2da77faab7422d221bcd945980f77f9d",
+                "dataHoraCadastro": "2022-11-19 22:09:45.824",
+                "ativo": true,
+                "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
             }
         ]
     }

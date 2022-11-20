@@ -70,7 +70,6 @@ module.exports = () => {
   };
 
   const retornarPorIdentificador = ({ nomeRecurso, identificador, userId }) => {
-    console.log({ identificador})
     const attrIdentificador = retornarAtributoIdentificador(nomeRecurso);
 
     if (!attrIdentificador) {
