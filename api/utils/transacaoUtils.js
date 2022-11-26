@@ -8,8 +8,8 @@ module.exports = () => {
     D: 'Despesa'
   };
 
-  transacaoUtils.listar = ({ incluirDesativados, nome, userId } = {}) => {
-    if (!nome) {
+  transacaoUtils.listar = ({ incluirDesativados, nome, mes, ano, userId } = {}) => {
+    if (!nome && !mes && !ano) {
       incluirDesativados = Boolean(
         incluirDesativados?.toLowerCase() === 'true'
       );
@@ -23,8 +23,16 @@ module.exports = () => {
     }
 
     const callbackFiltro = (transacao) => {
+      const dataTransacao = new Date(`${transacao.dataTransacao} 00:00:00.000`);
+      const mesTransacao = dataTransacao.getMonth() + 1;
+      const anoTransacao = dataTransacao.getFullYear();
+
+      mes = Number(mes);
+      ano = Number(ano);
+
       return (
-        !nome || transacao.nome.toLowerCase().includes(nome.toLowerCase())
+        (!nome || transacao.nome.toLowerCase().includes(nome.toLowerCase()))
+        && ((!mes && !ano) || (mes === mesTransacao && ano === anoTransacao))
       );
     };
 

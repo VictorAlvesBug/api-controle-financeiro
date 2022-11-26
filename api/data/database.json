@@ -188,6 +188,46 @@
                 "dataHoraCadastro": "2022-11-19 22:09:45.824",
                 "ativo": true,
                 "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Teste Receita cadastrada",
+                "valor": 12.34,
+                "tipo": "R",
+                "dataTransacao": "2022-11-21",
+                "codigo": "f63bd510b5f10615e32b1dc243d728f3",
+                "dataHoraCadastro": "2022-11-21 20:09:57.954",
+                "ativo": true,
+                "userId": "4q6vSdRO3NPwoWzF2D2JMhzPcQb2"
+            },
+            {
+                "nome": "Teste Despesa editada",
+                "valor": 453.21,
+                "tipo": "D",
+                "dataTransacao": "2022-11-23",
+                "codigo": "ddcfae873ee2cc49f5c587f50f168eec",
+                "dataHoraCadastro": "2022-11-21 20:10:24.882",
+                "ativo": false,
+                "userId": "4q6vSdRO3NPwoWzF2D2JMhzPcQb2"
+            },
+            {
+                "nome": "Salário do mes que vem (dezembro)",
+                "valor": 8000.01,
+                "tipo": "R",
+                "dataTransacao": "2022-12-07",
+                "codigo": "8e08668f5ac7231ed88e453840d95894",
+                "dataHoraCadastro": "2022-11-21 20:13:12.262",
+                "ativo": true,
+                "userId": "4q6vSdRO3NPwoWzF2D2JMhzPcQb2"
+            },
+            {
+                "nome": "Conta do Celular de Outubro",
+                "valor": 145,
+                "tipo": "D",
+                "dataTransacao": "2022-10-10",
+                "codigo": "b3a930fed9cd3c1e0cd8b7d5a217bdff",
+                "dataHoraCadastro": "2022-11-21 20:13:42.935",
+                "ativo": true,
+                "userId": "4q6vSdRO3NPwoWzF2D2JMhzPcQb2"
             }
         ]
     }
