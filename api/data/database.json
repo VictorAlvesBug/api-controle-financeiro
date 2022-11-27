@@ -15,8 +15,7 @@
             },
             "nome": {
                 "type": "string",
-                "regex": "^([^\\s]{3,})(\\s[^\\s]+)*$",
-                "regexDescription": "O primeiro nome deve conter pelo menos 3 caracteres e os demais nomes, caso informados, devem ser separados por apenas 1 espaço",
+                "regex": "^([^\\s]+)(\\s[^\\s]+)*$",
                 "nullable": false
             },
             "tipo": {
@@ -187,6 +186,106 @@
                 "dataHoraCadastro": "2022-11-19 22:09:45.824",
                 "ativo": true,
                 "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
+            },
+            {
+                "nome": "Teste 12345",
+                "valor": 123.45,
+                "tipo": "R",
+                "dataTransacao": "2022-11-27",
+                "codigo": "81658cef022c421ac8c7324d401e1252",
+                "dataHoraCadastro": "2022-11-27 16:42:10.248",
+                "ativo": false,
+                "userId": "0z4viScKYOQBWaFm8IokWB4iSYk2"
+            },
+            {
+                "nome": "Teste 321",
+                "valor": 3.21,
+                "tipo": "D",
+                "dataTransacao": "2022-11-27",
+                "codigo": "3eeeff735188f4ec129822f826a2ee29",
+                "dataHoraCadastro": "2022-11-27 16:42:22.421",
+                "ativo": false,
+                "userId": "0z4viScKYOQBWaFm8IokWB4iSYk2"
+            },
+            {
+                "nome": "Teste 123",
+                "valor": 1.23,
+                "tipo": "R",
+                "dataTransacao": "2022-11-27",
+                "codigo": "0b627e997c96b78b89c1cb9a8014218e",
+                "dataHoraCadastro": "2022-11-27 16:44:26.409",
+                "ativo": false,
+                "userId": "0z4viScKYOQBWaFm8IokWB4iSYk2"
+            },
+            {
+                "nome": "Teste 12345",
+                "valor": 123.45,
+                "tipo": "R",
+                "dataTransacao": "2022-11-27",
+                "codigo": "95b4ffd605f7209338b71e2833ccc1d3",
+                "dataHoraCadastro": "2022-11-27 16:48:31.375",
+                "ativo": false,
+                "userId": "0z4viScKYOQBWaFm8IokWB4iSYk2"
+            },
+            {
+                "nome": "Teste 321",
+                "valor": 3.21,
+                "tipo": "D",
+                "dataTransacao": "2022-11-27",
+                "codigo": "db81da4c549453d58125667f26fd5a0a",
+                "dataHoraCadastro": "2022-11-27 16:48:42.219",
+                "ativo": false,
+                "userId": "0z4viScKYOQBWaFm8IokWB4iSYk2"
+            },
+            {
+                "nome": "Salário do Mês",
+                "valor": 4560.78,
+                "tipo": "D",
+                "dataTransacao": "2022-11-07",
+                "codigo": "95acb298e0a3e3777b4e7502fb3715f9",
+                "dataHoraCadastro": "2022-11-27 17:00:19.569",
+                "ativo": false,
+                "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
+            },
+            {
+                "nome": "Salário do Mês",
+                "valor": 1212,
+                "tipo": "R",
+                "dataTransacao": "2022-11-07",
+                "codigo": "c8e38b00719f61018c668672536817e6",
+                "dataHoraCadastro": "2022-11-27 17:01:39.696",
+                "ativo": false,
+                "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
+            },
+            {
+                "nome": "Salário do Mês",
+                "valor": 1212,
+                "tipo": "R",
+                "dataTransacao": "2022-11-07",
+                "codigo": "4700bb91af28a70d45cdb04b081ce8ca",
+                "dataHoraCadastro": "2022-11-27 17:02:20.047",
+                "ativo": true,
+                "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
+            },
+            {
+                "nome": "Conta de Água",
+                "valor": 87.96,
+                "tipo": "D",
+                "dataTransacao": "2022-11-07",
+                "codigo": "e5de63fb47b0530ee55f4dbf557e875a",
+                "dataHoraCadastro": "2022-11-27 17:03:21.395",
+                "ativo": true,
+                "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
+            },
+            {
+                "nome": "Conta de Luz",
+                "valor": 256.42,
+                "tipo": "D",
+                "dataTransacao": "2022-11-09",
+                "codigo": "9787dba3208d02c091639b027e13b5dd",
+                "dataHoraCadastro": "2022-11-27 17:04:21.779",
+                "ativo": true,
+                "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
             }
         ]
     }
