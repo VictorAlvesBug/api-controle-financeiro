@@ -189,7 +189,7 @@
                 "userId": "JszQz1F2xNZqTizGEVWLviTKLOt1"
             },
             {
-                "nome": "Teste Receita cadastrada",
+                "nome": "Teste Receita 123",
                 "valor": 12.34,
                 "tipo": "R",
                 "dataTransacao": "2022-11-21",
@@ -226,6 +226,26 @@
                 "codigo": "b3a930fed9cd3c1e0cd8b7d5a217bdff",
                 "dataHoraCadastro": "2022-11-21 20:13:42.935",
                 "ativo": true,
+                "userId": "4q6vSdRO3NPwoWzF2D2JMhzPcQb2"
+            },
+            {
+                "nome": "Teste Nova Receita",
+                "valor": 555.55,
+                "tipo": "R",
+                "dataTransacao": "2022-11-27",
+                "codigo": "88465719173325aa49d396966e874637",
+                "dataHoraCadastro": "2022-11-27 12:28:26.806",
+                "ativo": true,
+                "userId": "4q6vSdRO3NPwoWzF2D2JMhzPcQb2"
+            },
+            {
+                "nome": "Teste Receita cadastrada",
+                "valor": 12.34,
+                "tipo": "R",
+                "dataTransacao": "2022-11-21",
+                "codigo": "5b2fed16a6c6ac75d4b5c69453a29574",
+                "dataHoraCadastro": "2022-11-27 12:36:55.020",
+                "ativo": false,
                 "userId": "4q6vSdRO3NPwoWzF2D2JMhzPcQb2"
             }
         ]
