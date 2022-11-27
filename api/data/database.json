@@ -286,6 +286,26 @@
                 "dataHoraCadastro": "2022-11-27 17:04:21.779",
                 "ativo": true,
                 "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
+            },
+            {
+                "nome": "TV e Internet Vivo Fibra",
+                "valor": 265.32,
+                "tipo": "D",
+                "dataTransacao": "2022-11-11",
+                "codigo": "a4a25863d65cec913265acacab573aa0",
+                "dataHoraCadastro": "2022-11-27 17:08:57.729",
+                "ativo": true,
+                "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
+            },
+            {
+                "nome": "Salário do Mês",
+                "valor": 1231,
+                "tipo": "R",
+                "dataTransacao": "2022-12-07",
+                "codigo": "9e4630cab8d20eecefcd0bb5d334baa6",
+                "dataHoraCadastro": "2022-11-27 17:12:18.190",
+                "ativo": true,
+                "userId": "AgwguVAzc1hnBQHUFzVs3QmNe3J3"
             }
         ]
     }
