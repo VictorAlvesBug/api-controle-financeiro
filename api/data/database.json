@@ -17,8 +17,7 @@
                 "type": "string",
                 "regex": "^([^\\s]{3,})(\\s[^\\s]+)*$",
                 "regexDescription": "O primeiro nome deve conter pelo menos 3 caracteres e os demais nomes, caso informados, devem ser separados por apenas 1 espaço",
-                "nullable": false,
-                "allowDuplicates": false
+                "nullable": false
             },
             "tipo": {
                 "type": "string",
@@ -121,7 +120,7 @@
             },
             {
                 "nome": "Salário de Dezembro",
-                "valor": 8650,
+                "valor": 8730,
                 "tipo": "R",
                 "dataTransacao": "2022-12-07",
                 "codigo": "f7578bab8ca5f3e9484b3768301e706d",
@@ -133,7 +132,7 @@
                 "nome": "Doação para ONG Quatro Patas",
                 "valor": 300,
                 "tipo": "D",
-                "dataTransacao": "2022-12-10",
+                "dataTransacao": "2022-12-09",
                 "codigo": "44aaf655656298a13a72662f81c3ee99",
                 "dataHoraCadastro": "2022-11-19 22:02:52.697",
                 "ativo": true,
@@ -141,7 +140,7 @@
             },
             {
                 "nome": "Condomínio",
-                "valor": 3253.27,
+                "valor": 3198.76,
                 "tipo": "D",
                 "dataTransacao": "2022-12-08",
                 "codigo": "54f3ae40186dcf40e60e831f79461a2f",
@@ -151,9 +150,9 @@
             },
             {
                 "nome": "Mercado - Compras do Mês",
-                "valor": 498.97,
+                "valor": 623.48,
                 "tipo": "D",
-                "dataTransacao": "2022-12-12",
+                "dataTransacao": "2022-12-16",
                 "codigo": "0779f9e73019e1456f9bc0ba8a425d84",
                 "dataHoraCadastro": "2022-11-19 22:04:54.206",
                 "ativo": true,
@@ -163,7 +162,7 @@
                 "nome": "Investimento na Bolsa de Valores",
                 "valor": 2500,
                 "tipo": "D",
-                "dataTransacao": "2022-12-14",
+                "dataTransacao": "2022-12-11",
                 "codigo": "b7843308a646e2b5405ff2843af544e9",
                 "dataHoraCadastro": "2022-11-19 22:06:20.443",
                 "ativo": true,
@@ -171,7 +170,7 @@
             },
             {
                 "nome": "Dividendos de Ações da Bolsa",
-                "valor": 1357,
+                "valor": 1435.79,
                 "tipo": "R",
                 "dataTransacao": "2022-12-16",
                 "codigo": "d28a13ca78ae12069c17e0b6443bcc4f",
